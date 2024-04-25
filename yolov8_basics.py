@@ -5,7 +5,7 @@ import numpy
 model = YOLO("yolov8n.pt", "v8")  
 
 # predict on an image
-detection_output = model.predict(source="inference/images/img0.JPG", conf=0.25, save=True) 
+detection_output = model.predict(source="inference/images/cat.jpeg", conf=0.25, save=True) 
 
 # Display tensor array
 print(detection_output)

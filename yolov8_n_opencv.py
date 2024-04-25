@@ -15,7 +15,7 @@ my_file.close()
 # print(class_list)
 
 # Generate random colors for class list
-detection_colors = []
+detection_colors = []q
 for i in range(len(class_list)):
     r = random.randint(0, 255)
     g = random.randint(0, 255)
@@ -23,14 +23,15 @@ for i in range(len(class_list)):
     detection_colors.append((b, g, r))
 
 # load a pretrained YOLOv8n model
-model = YOLO("weights/yolov8n.pt", "v8")
+model = YOLO("weights/best.pt", "v8")
 
 # Vals to resize video frames | small frame optimise the run
 frame_wid = 640
 frame_hyt = 480
 
 # cap = cv2.VideoCapture(1)
-cap = cv2.VideoCapture("inference/videos/afriq0.MP4")
+#cap = cv2.VideoCapture("inference/images/cat.jpeg")q
+cap = cv2.VideoCapture(0)
 
 if not cap.isOpened():
     print("Cannot open camera")
