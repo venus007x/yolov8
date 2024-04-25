@@ -14,8 +14,14 @@ my_file.close()
 
 # print(class_list)
 
+
+
+
+
+
+
 # Generate random colors for class list
-detection_colors = []q
+detection_colors = []
 for i in range(len(class_list)):
     r = random.randint(0, 255)
     g = random.randint(0, 255)
